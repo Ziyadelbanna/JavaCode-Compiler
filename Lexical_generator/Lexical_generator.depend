@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1553040420 source:/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/main.cpp
+	<bits/stdc++.h>
+	"read_files.h"
+	"check_NFA.h"
+
+1553183324 /home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/read_files.h
+	<iostream>
+	<vector>
+	<fstream>
+
+1553038400 source:/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/read_files.cpp
+	"read_files.h"
+	<bits/stdc++.h>
+
+1553036924 source:/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/src/NFA.cpp
+	"NFA.h"
+
+1553038816 /home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/include/NFA.h
+	<bits/stdc++.h>
+	"State_Node.h"
+
+1553180028 /home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/include/State_Node.h
+	<bits/stdc++.h>
+	"../read_files.h"
+
+1553036985 source:/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/src/State_Node.cpp
+	"State_Node.h"
+
+1553040055 source:/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/check_NFA.cpp
+	"check_NFA.h"
+
+1553040955 /home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/check_NFA.h
+	<bits/stdc++.h>
+	"read_files.h"
+	"State_Node.h"
+
