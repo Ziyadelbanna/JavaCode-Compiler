@@ -12,10 +12,11 @@ class NFA
         NFA();
         virtual ~NFA();
         void build_NFA();
+        vector<State_Node*> get_start_states();
     protected:
 
     private:
-      vector<State_Node> start_states;
+      vector<State_Node*> start_states;
 
     /******************************************* keyword ************************************/
       void create_keywords_path();

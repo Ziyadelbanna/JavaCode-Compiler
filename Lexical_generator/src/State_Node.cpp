@@ -1,8 +1,21 @@
 #include "State_Node.h"
 
-State_Node::State_Node(){}
+State_Node::State_Node(){
+    state_id = id_num++;
+}
+
 State_Node::~State_Node(){}
 
+
+
+void State_Node::set_state_id(int id_){
+   state_id = id_;
+}
+
+
+int State_Node::get_state_id(){
+    return state_id;
+}
 
 string State_Node::get_state_type(){
         return state_type;
@@ -22,7 +35,7 @@ bool State_Node::get_accepted(){
 }
 
 
-void State_Node::add_transaction(State_Node next_state, vector<char> nxt_input){
+void State_Node::add_transaction(State_Node *next_state, vector<char> nxt_input){
          next_states.push_back(next_state);
          next_state_inputs.push_back(nxt_input);
 }
@@ -36,7 +49,7 @@ void State_Node::set_accepted_buffer_sofar(vector<char> vec){
         accepted_buffer_sofar = vec;
 }
 
-vector<State_Node> State_Node::get_next_states(){
+vector<State_Node*> State_Node::get_next_states(){
         return next_states;
 }
 

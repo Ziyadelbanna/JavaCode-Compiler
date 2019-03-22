@@ -8,7 +8,6 @@ char start_small_letter;
 char end_small_letter;
 char start_capital_letter;
 char end_capital_letter;
-
 char start_digit;
 char end_digit;
 
@@ -22,10 +21,12 @@ vector<char> letters;
 vector<char> digits;
 vector<string> buffer_words;
 
+int id_num = 0;
+
 void read_rules_file(){
     ifstream rules_file;
 
-    rules_file.open("/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/rules");
+    rules_file.open("/home/mohamedabobakr/Documents/codeblocksProjects/Lexical_generator/rules.txt");
 
     if (!rules_file) {
         cout << "Unable to open rules file";
@@ -49,7 +50,7 @@ void read_rules_file(){
               letters.push_back(i);
             }
 
-        }else if(rule_line[0] == 'd'){
+        }else if(rule_line[0]=='d' && rule_line[5]==' '){
             start_digit = rule_line[8];
             end_digit = rule_line[12];
             for(char i = start_digit; i<=end_digit; i++){
@@ -75,9 +76,9 @@ void read_rules_file(){
                 size_t pos = 0;
                 string operation;
                 vector<char> temp;
+                rule_line+= "|";
                 while((pos = rule_line.find("|")) != string::npos){
                     operation = rule_line.substr(0 , pos);
-
                     rule_line.erase(0 , pos + 1);
                     for(int i = 0 ; i < operation.size() ; i++){
                         if(operation[i] != '\\' && operation[i] != ' '){

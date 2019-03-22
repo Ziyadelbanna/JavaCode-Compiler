@@ -13,7 +13,6 @@ extern char start_small_letter;
 extern char end_small_letter;
 extern char start_capital_letter;
 extern char end_capital_letter;
-
 extern char start_digit;
 extern char end_digit;
 
@@ -27,4 +26,5 @@ extern vector<char> letters;
 extern vector<char> digits;
 extern vector<string> buffer_words;
 
+extern int id_num;
 #endif
