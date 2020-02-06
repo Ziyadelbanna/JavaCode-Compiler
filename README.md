@@ -1,9 +1,6 @@
 # java-compiler
-[![Build Status](https://travis-ci.com/yakout/compiler.svg?token=8xdgMqps2fwk2PdRCgH7&branch=master)](https://travis-ci.com/yakout/compiler)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a896f3db6bde4fdfaa30ed9e4d20cd1c)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yakout/compiler&amp;utm_campaign=Badge_Grade)
 
-Yet Another Dummy Java Compiler (YADJC)
-> The intermediate code generation to bytecode was implemented without using tools like yacc/bison (still buggy) but you can find the bison version in this repo [jcompiler](http://github.com/AhmedWalidKamal/jcompiler/)
+# Project by Ziyad Elbanna, Mohamed Abobakr, Khalil Esmail, and Ahmed Elbawab
 
 ```
  +---------------+   
@@ -262,16 +259,6 @@ State | ! | (  | ) |  \*| +| ,| -| .| /| ;| <| =| >| E| a| b| e| f| h| i| l| n| 
 42 |- |- |- |- |- |- |- |- |- |- |- |- |- |10 |10 |10 |10 |10 |10 |10 |10 |43 |10 |10 |10 |10 |- |- |10 |10 |10 
 43 |- |- |- |- |- |- |- |- |- |- |- |- |- |10 |10 |10 |10 |10 |10 |10 |10 |10 |10 |10 |10 |10 |- |- |10 |10 |10 
 
-### Generated NFA Graph
-(click on the image for full size)
-![NFA](https://yakout.github.io/assets/images/NFA.png)
-
-### Generated minimized DFA Graph
-![DFA](https://yakout.github.io/assets/images/DFA.png)
-
 ## Assumptions
 * In the rules file the negative sign should be escaped (e.g addop = \\+ | \\-)
 That’s because how we handle the reserved keywords, for us the dash ‘-’ is reserved keyword to specify ranges like A-Z, and any keywords symbol should be escaped like +, *, = ..
-
-## Notes 
-* The visualization tool used is [Graphviz](http://graphviz.org/)
