@@ -1,6 +1,6 @@
-# java-compiler
+# JavaCode-compiler
 
-# Project by Ziyad Elbanna, Mohamed Abobakr, Khalil Esmail, and Ahmed Elbawab
+ Project by Ziyad Elbanna, Mohamed Abobakr, Khalil Esmail, and Ahmed Elbawab
 
 ```
  +---------------+   
